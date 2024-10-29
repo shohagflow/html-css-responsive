@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        .container{
+            width: 1000px;
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .content{
+            width: 50%;
+            float: left;
+        }
+        .hover-effect{
+            width: 50%;
+            float: left;
+            padding-left: 30px;
+        }
+        .hover-effect ul{
+            list-style: none;
+        }
+        .hover-effect ul li {
+            padding: 10px 0px;
+            border-bottom: 2px solid ;
+            transition: .5s;
+
+        }
+        .hover-effect ul li:hover{
+            color: red;
+            padding-left: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="content">
+            <h2>Content Title</h2>
+            <p>y text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    <div class="hover-effect">
+        <ul>
+            <li>Product 1</li>
+            <li>Product 2</li>
+            <li>Product 3</li>
+            <li>Product 4</li>
+        </ul>
+
+    </div>
+</section>
+</body>
+</html>
