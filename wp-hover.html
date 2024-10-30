@@ -1,0 +1,76 @@
+<style>
+/* hover Animation -1 if you click then you can see details */
+selector .tm-image{
+    transform: translateY(50%);
+    z-index: 3;
+    transition: ease-in-out 0.6s;
+}
+selector .tm-details{
+    z-index: 2;
+    transform: translateY(-50%);
+    transition: ease-in-out 0.6s;
+    opacity: 0;
+}
+selector:hover .tm-image, selector:hover .tm-details{
+    transform: translateY(0);
+    opacity: 1;
+}
+==============================
+/* hover Animation -2 if you hover then you can see from Bottom to top 50% details */
+/*Glass Effect CSS*/
+selector {
+    --height: 150px;
+    --bottom: -150px;
+    overflow: hidden !important;
+}
+selector .member{
+    height: var(--height);
+    position: absolute;
+    backdrop-filter: blur(20px);
+    bottom: 0;
+    transition: .5s ease-in-out;
+}
+
+/*Hover Hide/Show CSS*/
+selector .member{
+    bottom: var(--bottom);
+}
+selector:hover .member{
+    bottom: 0px;
+}
+===============================
+
+/*Content Show/Hide on Hover*/
+selector{
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+selector:hover{
+    opacity: 1;
+}
+===============================
+
+:root{
+    --color: red;
+    --border_width: 4px;
+    --height: 85px;
+    --time: 1s;
+}
+
+selector:before{
+    content: "";
+    width: var(--border_width);
+    height: var(--height);
+    background: var(--color);
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    transition:var(--time);
+}
+.team_member:hover selector:before{
+    width: 110%;
+}
+==================================
+
+
+</style>
